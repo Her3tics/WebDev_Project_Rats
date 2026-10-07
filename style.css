@@ -35,3 +35,53 @@ h1 {
 }
 
 
+/* 1. background */
+body {
+  background-color: #918484;
+  color: #111111;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+/* 2. Navigation bar*/
+a, a:visited {
+  color: #f8eded;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* 3. logo and category */
+.logo, .tagline {
+  color: #cc400dcc;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 4. Content card  */
+.card {
+  background-color: #ffffff;
+  border-left: 5px solid #ff4500; /* Accent border on the left */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 30px;
+  text-align: left; /* Left-aligned text inside card for contrast */
+}
+
+/* 5. Distinct typography heading */
+h1 {
+  font-size: 28px;
+  margin-top: 0;
+  color: #000000;
+}
+
+/* 6. Spaced-out body copy */
+p {
+  color: #555555;
+  line-height: 1.7;
+  font-size: 15px;
+
