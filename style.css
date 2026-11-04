@@ -115,7 +115,7 @@ body {
     display: inline-flex;
     gap: 15px;
 }
-/*red slogan*/
+/*red hidden slogan*/
 h1:hover {
     color: #D70040;
 }
