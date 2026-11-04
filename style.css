@@ -35,7 +35,7 @@ h1 {
 }
 
 
-/* 1. background */
+/* background */
 body {
   background-color: #918484;
   color: #111111;
@@ -45,7 +45,7 @@ body {
   margin: 0;
 }
 
-/* 2. Navigation bar*/
+/* Navigation bar*/
 a, a:visited {
   color: #f8eded;
   text-decoration: none;
@@ -72,16 +72,50 @@ a, a:visited {
   text-align: left; /* Left-aligned text inside card for contrast */
 }
 
-/* 5. Distinct typography heading */
+/* heading */
 h1 {
   font-size: 28px;
   margin-top: 0;
   color: #000000;
 }
 
-/* 6. Spaced-out body copy */
+/* Spaced-out body copy */
 p {
   color: #555555;
   line-height: 1.7;
   font-size: 15px;
 
+}
+
+.nav_buttons {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-flex;
+    gap: 15px;
+}
+
+.nav_buttons a:hover {
+    color: #FFBF00;
+}
+/*Picture main*/
+body {
+    background-image: url("https://images.unsplash.com/photo-1511994477422-b69e44bd4ea9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*main slogan*/
+.slogan{
+  color: white;  
+  border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-flex;
+    gap: 15px;
+}
+/*red slogan*/
+h1:hover {
+    color: #D70040;
+}
