@@ -56,15 +56,15 @@ a, a:visited {
 
 /* logo and category */
 .logo, .tagline {
-  color: #FF3131;
+  color: #FF4D4D;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 /*  Content card  */
 .card {
-  background-color: #ffffff;
-  border-left: 5px solid #FF3131; /* Accent border on the left */
+  background-color: #E0E0E0;
+  border-left: 5px solid #FF4D4D; /* Accent border on the left */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
   max-width: 450px;
   margin: 30px auto;
@@ -107,7 +107,7 @@ p {
 }
 
 .nav_buttons_about a:hover{
-  color: #FF3131;
+  color: #FF4D4D;
 }
 /*Picture main*/
 body {
@@ -128,5 +128,5 @@ body {
 }
 /*red hidden slogan*/
 h1:hover {
-    color: #FF3131;
+    color: #FF4D4D;
 }
