@@ -130,3 +130,8 @@ body {
 h1:hover {
     color: #FF4D4D;
 }
+
+.tagline {
+  color: #B30000; /* Darker red for light backgrounds */
+  font-weight: 600; /* Bolder font weights also improve legibility */
+}
