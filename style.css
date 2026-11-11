@@ -56,7 +56,7 @@ a, a:visited {
 
 /* logo and category */
 .logo, .tagline {
-  color: #cc400dcc;
+  color: #FF3131;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -64,7 +64,7 @@ a, a:visited {
 /*  Content card  */
 .card {
   background-color: #ffffff;
-  border-left: 5px solid #ff4500; /* Accent border on the left */
+  border-left: 5px solid #FF3131; /* Accent border on the left */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
   max-width: 450px;
   margin: 30px auto;
@@ -81,7 +81,7 @@ h1 {
 
 /* Spaced-out body copy */
 p {
-  color: #555555;
+  color: #000000;
   line-height: 1.7;
   font-size: 15px;
 
@@ -95,8 +95,19 @@ p {
     gap: 15px;
 }
 
+.nav_buttons_about {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: inline-flex;
+    gap: 15px;
+}
 .nav_buttons a:hover {
     color: #FFBF00;
+}
+
+.nav_buttons_about a:hover{
+  color: #FF3131;
 }
 /*Picture main*/
 body {
@@ -117,5 +128,5 @@ body {
 }
 /*red hidden slogan*/
 h1:hover {
-    color: #D70040;
+    color: #FF3131;
 }
