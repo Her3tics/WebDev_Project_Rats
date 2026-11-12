@@ -135,3 +135,24 @@ h1:hover {
   color: #B30000; /* Darker red for light backgrounds */
   font-weight: 600; /* Bolder font weights also improve legibility */
 }
+
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+      }
+
+.light-mode {
+  background-color: white;
+  color: black;
+       }
+
+.mode-buttons{
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-en;
+    gap: 15px;
+}
