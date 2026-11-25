@@ -1,137 +1,300 @@
-/* main style */
+/* =========================================
+   1. BASE & MOBILE-FIRST STYLES (< 600px)
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 40px;
-}
-
-/* links */
-a, a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-/* logo */
-.logo {
-  color: orange;
-}
-
-/* line*/
-hr {
-  border-color: #333;
-  margin: 30px 0;
-}
-
-/* subtitl */
-.subtitle, .stats {
-  color: gray;
-}
-
-/*title */
-h1 {
-  font-size: 40px;
-}
-
-
-/* background */
-body {
-  background-color: #918484;
-  color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px 16px;
+  background-color: #111111;
+  background-image:
+    url("https://images.unsplash.com/photo-1511994477422-b69e44bd4ea9?fm=jpg&q=60&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll; /* Prevents mobile Safari scroll glitches */
+  color: #ffffff;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
-  padding: 40px 20px;
+}
+
+/* Header & Navigation (Flexbox) */
+.site-header {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
   margin: 0;
-}
-
-/* Navigation bar*/
-a, a:visited {
-  color: #f8eded;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-/* logo and category */
-.logo, .tagline {
   color: #FF4D4D;
+  font-size: 20px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
 }
 
-/*  Content card  */
-.card {
-  background-color: #E0E0E0;
-  border-left: 5px solid #FF4D4D; /* Accent border on the left */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
-  max-width: 450px;
-  margin: 30px auto;
-  padding: 30px;
-  text-align: left; /* Left-aligned text inside card for contrast */
-}
-
-/* heading */
-h1 {
-  font-size: 28px;
-  margin-top: 0;
-  color: #000000;
-}
-
-/* Spaced-out body copy */
-p {
-  color: #000000;
-  line-height: 1.7;
-  font-size: 15px;
-
-}
-
-.nav_buttons {
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    display: inline-flex;
-    gap: 15px;
-}
-
+.nav_buttons,
 .nav_buttons_about {
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    display: inline-flex;
-    gap: 15px;
-}
-.nav_buttons a:hover {
-    color: #FFBF00;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  padding: 8px 18px;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
 }
 
-.nav_buttons_about a:hover{
+.nav_buttons:hover {
+  border-color: #FFBF00;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.nav_buttons_about:hover {
+  border-color: #FF4D4D;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+a,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav_buttons a:hover,
+.nav_buttons a:focus-visible {
+  color: #FFBF00;
+  transform: translateY(-1px);
+}
+
+.nav_buttons_about a:hover,
+.nav_buttons_about a:focus-visible {
   color: #FF4D4D;
+  transform: translateY(-1px);
 }
-/*Picture main*/
-body {
-    background-image: url("https://images.unsplash.com/photo-1511994477422-b69e44bd4ea9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+
+.nav_buttons span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
 }
-/*main slogan*/
-.slogan{
-  color: white;  
-  border: 1px solid white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    display: inline-flex;
-    gap: 15px;
+
+/* Footer / Hero Block (Flexbox) */
+footer {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
 }
-/*red hidden slogan*/
-h1:hover {
-    color: #FF4D4D;
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  margin: 24px 0 12px;
 }
 
 .tagline {
-  color: #B30000; /* Darker red for light backgrounds */
-  font-weight: 600; /* Bolder font weights also improve legibility */
+  margin: 0;
+  color: #FF6B6B;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+h1.beast {
+  margin: 4px 0 8px;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+h1.beast:hover {
+  color: #FF4D4D;
+  transform: scale(1.02);
+}
+
+p {
+  margin: 0;
+  color: #f3f3f3;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.slogan {
+  max-width: 640px;
+  padding: 10px 18px;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 280px;
+  max-width: 450px;
+  padding: 20px;
+  background-color: rgba(224, 224, 224, 0.95);
+  border-left: 5px solid #FF4D4D;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  color: #111111;
+  text-align: left;
+}
+
+.card p {
+  color: #111111;
+}
+
+/*
+   2. PAGE TRANSITIONS
+*/
+
+@view-transition {
+  navigation: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+::view-transition-new(root) {
+  animation: 250ms ease-out both fadeIn;
+}
+
+::view-transition-old(root) {
+  animation: 200ms ease-in both fadeOut;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+
+  h1.beast:hover {
+    transform: none;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}
+
+/* 
+RESPONSIVE BREAKPOINTS
+*/
+
+/* Large phones / Small tablets (600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    padding: 32px 20px;
+  }
+
+  a,
+  a:visited {
+    font-size: 14px;
+  }
+
+  .nav_buttons,
+  .nav_buttons_about {
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  h1.beast {
+    font-size: 34px;
+  }
+}
+
+/* Tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 40px 28px;
+    background-attachment: fixed;
+  }
+
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h1.beast {
+    font-size: 40px;
+  }
+}
+
+/* Desktops (992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    padding: 48px 36px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  h1.beast {
+    font-size: 44px;
+  }
+
+  .slogan {
+    font-size: 15px;
+    padding: 12px 22px;
+  }
 }
